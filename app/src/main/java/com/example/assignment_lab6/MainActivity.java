@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         String targetName=empName.getText().toString();
         System.out.println("TargetName: "+targetName);
 //        ArrayList<String> arrayList=db.getAllEmployeeName(targetName);
-        List<String>arrayList=db.getEmployee(targetName);
+        List<String>arrayList=db.getAllEmployeeName(targetName);
         ArrayAdapter arrayAdapter=new ArrayAdapter( this, android.R.layout.simple_list_item_1, arrayList);
         listView.setAdapter(arrayAdapter);
 
